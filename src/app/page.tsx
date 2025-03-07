@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,11 +15,11 @@ export default function Home() {
             <span className="flex-1 text-right pr-8">メールアドレス</span>
             <input type="text" id="email" className="flex-3 h-8 px-2 rounded-lg border border-gray-500 text-sm" />
           </label>
-          <label htmlFor="content" className="flex mb-5">
+          <label htmlFor="content" className="flex mb-10">
           <span className="flex-1 text-right pr-8">お問い合わせ内容</span>
             <textarea name="" id="content" className="flex-3 h-30 px-2 rounded-lg py-0.5 resize-none border border-gray-500 text-sm"></textarea>
           </label>
-          <button className="w-40 mt-3 h-10 rounded-full border border-cyan-400 shadow-lg hover:shadow-none hover:translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">送信</button>
+          <Link href="/confirm" className="flex justify-center items-center mx-auto w-40 mt-5 h-10 rounded-full border border-cyan-400 shadow-lg hover:shadow-none hover:translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">確認画面に</Link>
         </form>
       </div>
     </div>
