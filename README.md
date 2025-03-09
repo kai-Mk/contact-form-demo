@@ -14,6 +14,3 @@
 pnpm dev
 ```
 
-```bash
-npm run dev
-```
